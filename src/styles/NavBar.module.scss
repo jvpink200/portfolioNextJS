@@ -1,0 +1,28 @@
+@use "../styles/mixin.scss" as var;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8rem;
+}
+.containerNav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var.$colorDarkBlue;
+  font-size: 24px;
+}
+
+.navLogo {
+  width: 48px;
+  object-fit: "contain";
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  .navIcon {
+    margin-top: 4px;
+  }
+}

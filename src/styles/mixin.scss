@@ -1,0 +1,10 @@
+$colorPrimary: #365c90;
+$colorSecondary: #ffffff;
+$colorDarkBlue: #5488c0;
+$colorLightBlue: #729acf;
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}

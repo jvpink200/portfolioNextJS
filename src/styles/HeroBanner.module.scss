@@ -1,0 +1,29 @@
+@use "../styles/mixin.scss" as var;
+
+.heroBanner {
+  padding: 4rem 8rem;
+  font-size: 24px;
+  color: var.$colorSecondary;
+  text-align: center;
+}
+.subTitle {
+  color: var.$colorDarkBlue;
+  padding-bottom: 2.5rem;
+}
+
+.wrapper {
+  position: relative;
+  height: 40rem;
+}
+
+.backgroundImg {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
