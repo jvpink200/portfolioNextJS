@@ -1,5 +1,9 @@
 @use "../styles/mixin.scss" as var;
 .projects {
+  @media screen and (max-width: 900px) {
+    height: 100%;
+    padding: 16px;
+  }
   height: 30rem;
   background-color: var.$colorPrimary;
   display: flex;
