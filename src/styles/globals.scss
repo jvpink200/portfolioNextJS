@@ -1,3 +1,5 @@
+@use "../styles/mixin.scss" as var;
+
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +21,14 @@ a {
   &:visited {
     color: inherit;
   }
+}
+
+.footer {
+  width: 100%;
+  background-color: var.$colorSecondary;
+  color: var.$colorDarkBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
 }

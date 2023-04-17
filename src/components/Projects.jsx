@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Projects.module.scss";
 import Image from "next/image";
 export default function Projects() {
@@ -13,7 +14,7 @@ export default function Projects() {
       id: 2,
       projectName: "Automated Scheduler",
       projectImg: "scheduler",
-      url: "https://scheduler-demo.netlify.app/home",
+      url: "https://scheduler-demo.netlify.app/",
     },
     {
       id: 3,
@@ -25,13 +26,17 @@ export default function Projects() {
   let projectCard = projects.map((card) => {
     return (
       <div className={styles.card} key={card.id}>
-        <Image
-          src={`/${card.projectImg}.jpg`}
-          width={280}
-          height={220}
-          alt={card.projectName}
-        />
-        <p>{card.projectName}</p>
+        <Link href={card.url}>
+          <Image
+            src={`/${card.projectImg}.jpg`}
+            width={280}
+            height={220}
+            alt={card.projectName}
+          />
+        </Link>
+        <Link href={card.url}>
+          <p>{card.projectName}</p>
+        </Link>
       </div>
     );
   });
