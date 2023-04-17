@@ -1,9 +1,5 @@
 import styles from "../styles/NavBar.module.scss";
-import {
-  UilMessage,
-  UilBriefcaseAlt,
-  UilUserCircle,
-} from "@iconscout/react-unicons";
+import { UilMessage, UilUserCircle } from "@iconscout/react-unicons";
 import Link from "next/link";
 export default function NavBar() {
   return (
