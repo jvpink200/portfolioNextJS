@@ -6,28 +6,7 @@ export default function NavBar() {
     <>
       <nav className={styles.nav}>
         <img src="logo.png" className={styles.navLogo} />
-        <ul className={styles.containerNav}>
-          <li>
-            <Link href="/about">
-              <div className={styles.navLinks}>
-                <div className={styles.navIcon}>
-                  <UilUserCircle size="24" />
-                </div>
-                About
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <div className={styles.navLinks}>
-                <div className={styles.navIcon}>
-                  <UilMessage size="24" />
-                </div>
-                Contact
-              </div>
-            </Link>
-          </li>
-        </ul>
+        <ul className={styles.containerNav}></ul>
       </nav>
     </>
   );
