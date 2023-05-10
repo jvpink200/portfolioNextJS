@@ -10,7 +10,7 @@ export default function NavBar() {
           <Link href="/">
             <Image src="/logo.png" alt="logo nav" width={48} height={48} />
           </Link>
-          <Link href="/">Home</Link>
+          <Link href="/">Home Change</Link>
         </div>
 
         <ul className={styles.containerNav}>
