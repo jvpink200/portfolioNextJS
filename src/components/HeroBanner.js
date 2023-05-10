@@ -1,7 +1,7 @@
 import styles from "../styles/HeroBanner.module.scss";
 import Image from "next/image";
 import heroBannerMac from "../assets/herobannerv1.jpg";
-export default function HeroBanner() {
+export default function Herobanner() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.backgroundImg}>
