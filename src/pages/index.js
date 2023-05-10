@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>About a programmer</title>
+        <title>About a programmer test change</title>
         <meta name="description" content="portfolio to showcase work" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
