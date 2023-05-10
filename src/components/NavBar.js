@@ -10,10 +10,10 @@ export default function NavBar() {
           <Link href="/">
             <Image src="/logo.png" alt="logo nav" width={48} height={48} />
           </Link>
-          <Link href="/">Home Change</Link>
+          <Link href="/">Home</Link>
         </div>
 
-        <ul className={styles.containerNav}>
+        {/*<ul className={styles.containerNav}>
           <li className={styles.navLinks}>
             <UilUserCircle />
             <Link href="/about">About</Link>
@@ -22,7 +22,7 @@ export default function NavBar() {
             <UilMessage />
             <Link href="/contact">Contact </Link>
           </li>
-        </ul>
+  </ul>*/}
       </nav>
     </>
   );
