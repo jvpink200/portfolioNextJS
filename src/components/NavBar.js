@@ -17,7 +17,7 @@ export default function NavBar({ active }) {
           </Link>
         </div>
 
-        <ul className={styles.containerNav}>
+        {/*<ul className={styles.containerNav}>
           <li className={styles.navLinks}>
             <UilUserCircle />
             <Link href="/about">
@@ -36,7 +36,7 @@ export default function NavBar({ active }) {
               </span>
             </Link>
           </li>
-        </ul>
+  </ul>*/}
       </nav>
     </>
   );
