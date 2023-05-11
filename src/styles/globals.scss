@@ -40,18 +40,3 @@ a {
   font-weight: 800;
   color: blue;
 }
-
-// .active {
-//   color: black;
-//   & a:hover {
-//     color: gray;
-//   }
-// }
-
-.navHome {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var.$colorDarkBlue;
-  font-size: 24px;
-}

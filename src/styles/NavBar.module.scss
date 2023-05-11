@@ -21,6 +21,21 @@
   object-fit: "contain";
 }
 
+.navHome {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var.$colorDarkBlue;
+  font-size: 24px;
+}
+
+.active {
+  color: var.$colorBlack;
+  &:hover {
+    color: gray;
+  }
+}
+
 .navLinks {
   display: flex;
   align-items: center;

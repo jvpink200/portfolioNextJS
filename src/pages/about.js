@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 export default function About() {
   return (
     <>
+      <NavBar active="aboutActive" />
       <p>
         As a tech professional with over 4+ years ranging from having experience
         as a support application analyst to being a
