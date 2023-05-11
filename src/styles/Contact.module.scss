@@ -3,22 +3,28 @@ $border-radius-sm: 12px;
 $border-radius-xs: 8px;
 $contact-font-size: 24px;
 $spacing-md: 24px;
+$large-font-size: 32px;
 .contact {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
-  width: 40em;
-  height: 38em;
+  width: 30em;
+  height: 28em;
   border-radius: $border-radius-md;
   background-color: #365c90;
   color: white;
-  .name {
+  .title {
+    font-size: $large-font-size;
+  }
+  .name,
+  .email {
     font-size: $contact-font-size;
   }
   .form_input {
@@ -30,7 +36,6 @@ $spacing-md: 24px;
 
   .submit {
     margin-top: $spacing-md;
-    margin-left: -108px;
     input[type="submit"] {
       padding: 8px 16px;
       border-radius: $border-radius-sm;

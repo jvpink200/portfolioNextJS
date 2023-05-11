@@ -1,6 +1,7 @@
-import styles from "../styles/Contact.module.scss";
 import NavBar from "@/components/NavBar";
+import styles from "../styles/Contact.module.scss";
 export default function Contact() {
+  let title = "Let's Connect!";
   return (
     <>
       <NavBar active="contactActive" />
@@ -11,6 +12,7 @@ export default function Contact() {
           acceptCharset="UTF-8"
           className={styles.form}
         >
+          <p className={styles.title}>{title}</p>
           <div className={styles.name}>
             <label htmlFor="name">Name:</label>
             <input

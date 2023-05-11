@@ -43,8 +43,7 @@
 
 .landingText {
   background-color: var.$colorSecondary;
-  width: 500px;
-  padding: 16px;
+  padding: 24px;
   border-radius: 25px;
   @media screen and (min-width: 900px) {
     background-color: var.$colorPrimary;
