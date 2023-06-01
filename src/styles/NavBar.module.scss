@@ -33,6 +33,9 @@
       background-color: var.$colorSecondary;
       padding: 32px;
       position: relative;
+      .navLinks:last-child {
+        padding-left: 22px;
+      }
     }
     &.hideMenu{
       display: none;
