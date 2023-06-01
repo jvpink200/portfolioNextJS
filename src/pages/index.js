@@ -38,7 +38,6 @@ export default function Home() {
       <NavBar active="home" />
       <Herobanner />
       <Projects />
-      <Footer />
     </>
   );
 }
