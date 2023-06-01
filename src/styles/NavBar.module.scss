@@ -26,6 +26,11 @@
   gap: 16px;
   color: var.$colorDarkBlue;
   font-size: 24px;
+  &.hideMenu {
+    .navLinks:first-child{
+      display:none;
+    }
+  }
   @media screen and (max-width: 900px) {
     flex-direction: column;
     z-index: 2;
