@@ -3,7 +3,7 @@ import styles from "../styles/Contact.module.scss";
 export default function Contact() {
   let title = "Let's Connect!";
   return (
-    <>
+    <div className={styles.wrapperContact}>
       <NavBar active="contactActive" />
       <section className={styles.contact}>
         <form
@@ -56,6 +56,6 @@ export default function Contact() {
           </div>
         </form>
       </section>
-    </>
+    </div>
   );
 }

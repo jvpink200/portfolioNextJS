@@ -4,10 +4,11 @@ $border-radius-xs: 8px;
 $contact-font-size: 24px;
 $spacing-md: 24px;
 $large-font-size: 32px;
+
 .contact {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 124px;
 }
 .form {
   display: flex;

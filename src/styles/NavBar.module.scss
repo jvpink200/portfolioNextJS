@@ -1,12 +1,24 @@
 @use "../styles/mixin.scss" as var;
 .nav {
   display: flex;
-  @media screen and (max-width: 900px) {
-    flex-direction: column;
+  flex-direction: column;
+  height: 48px;
+  .navMenu {
+    background-color: var.$colorPrimary;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    color: white;
   }
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 8rem;
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    .navMenu{
+      display:none;
+    }
+  }
 }
 .containerNav {
   display: flex;
@@ -14,7 +26,20 @@
   gap: 16px;
   color: var.$colorDarkBlue;
   font-size: 24px;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    z-index: 2;
+    &.showMenu {
+      background-color: var.$colorSecondary;
+      padding: 32px;
+      position: relative;
+    }
+    &.hideMenu{
+      display: none;
+    }
+  }
 }
+
 
 .navLogo {
   width: 48px;
@@ -22,11 +47,14 @@
 }
 
 .navHome {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var.$colorDarkBlue;
-  font-size: 24px;
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var.$colorDarkBlue;
+    font-size: 24px;
+  }
 }
 
 .active {

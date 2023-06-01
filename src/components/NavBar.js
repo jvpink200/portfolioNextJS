@@ -1,8 +1,13 @@
 import styles from "../styles/NavBar.module.scss";
 import Image from "next/image";
-import { UilMessage, UilUserCircle } from "@iconscout/react-unicons";
+import { UilMessage, UilUserCircle, UilHome, UilBars } from "@iconscout/react-unicons";
 import Link from "next/link";
+import { useState } from "react";
 export default function NavBar({ active }) {
+  let [isShownMenu, setIsShownMenu] = useState(false);
+  let handleMenu = () => {
+    setIsShownMenu(!isShownMenu);
+  } 
   return (
     <nav className={styles.nav}>
       <div className={styles.navHome}>
@@ -13,7 +18,16 @@ export default function NavBar({ active }) {
           <span className={active == "home" ? styles.active : null}>Home</span>
         </Link>
       </div>
-      <ul className={styles.containerNav}>
+      <div className={styles.navMenu} onClick={handleMenu}><UilBars/></div>
+      <ul className={isShownMenu == false ? `${styles.containerNav} ${styles.hideMenu}` : `${styles.containerNav} ${styles.showMenu}`}>
+        <li className={styles.navLinks}>
+        <UilHome />
+          <Link href="/">
+            <span className={active == "home" ? styles.active : null}>
+              Home
+            </span>
+          </Link>
+        </li>
         <li className={styles.navLinks}>
           <UilUserCircle />
           <Link href="/about">
