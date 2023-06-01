@@ -9,3 +9,51 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.videoGC {
+  width: 40px;
+  img {
+    height: 100%;
+    width: 100%
+  }
+}
+
+.electricGuitar {
+  width: 48px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.hobbies {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:8px;
+  @media screen and (min-width:900px) {
+    flex-direction: row;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap:8px;
+  }
+}
+
+.title {
+  display: flex;
+  align-self: center;
+  font-size: 24px;
+  font-weight: 800;
+  @media screen and (min-width:900px) {
+    align-self:flex-start;
+  }
+}
+
+.soccer, .coding {
+  color: #365c90;
+  margin-left:8px;
+  margin-right:8px;
+}
