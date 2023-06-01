@@ -3,6 +3,7 @@ $border-radius-sm: 12px;
 $border-radius-xs: 8px;
 $contact-font-size: 24px;
 $spacing-md: 24px;
+$spacing-sm: 16px;
 $large-font-size: 32px;
 
 .contact {
@@ -37,6 +38,7 @@ $large-font-size: 32px;
 
   .submit {
     margin-top: $spacing-md;
+    margin-left: $spacing-sm;
     input[type="submit"] {
       padding: 8px 16px;
       border-radius: $border-radius-sm;
