@@ -34,9 +34,11 @@ export default function Projects() {
             alt={card.projectName}
           />
         </Link>
-        <Link href={card.url}>
-          <p>{card.projectName}</p>
-        </Link>
+        <div className={styles.outline}>
+          <Link href={card.url}>
+            <p>{card.projectName}</p>
+          </Link>
+        </div>
       </div>
     );
   });
